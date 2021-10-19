@@ -30,7 +30,6 @@
 // Advanced
 // 피보나치 수열을 구하는 효율적인 알고리즘(O(N))이 존재합니다. 재귀함수의 호출을 직접 관찰하여 비효율이 있는지 확인해 보시기 바랍니다.
 
-
 // 풀이
 // naive solution: O(2^N)
 // let fibonacci = function (n) {
