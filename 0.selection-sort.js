@@ -2,12 +2,27 @@
 let a = [10,15,2,7,8,1,9,19];
 let result = [];
 
+// '어떤 원소가 없어질 때까지' 라는 조건이 있다면 while문을 많이 쓴다.
+// while(a.length > 0) : while도 가능
 for (let i = 0; i < 8; i++){
   result.push(Math.min.apply(null, a)) // a 배열에서 가장 작은 값을 찾는다.
   a.splice(a.indexOf(Math.min.apply(null, a)),1) // 조건에 맞는 가장 첫 번째 인덱스를 반환하고, 존재하지 않으면 -1을 반환한다.
   console.log(a);
   console.log(result);
 }
+
+// apply() 사용법
+// const numbers = [5, 6, 2, 3, 7];
+
+// const max = Math.max.apply(null, numbers);
+
+// console.log(max);
+// expected output: 7
+
+// const min = Math.min.apply(null, numbers);
+
+// console.log(min);
+// expected output: 2
 
 
 
